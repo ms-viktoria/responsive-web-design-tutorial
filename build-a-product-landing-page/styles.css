@@ -1,6 +1,17 @@
-*,
-::before,
-::after {
+@media screen and (min-width: 375px) {
+    * {
+        text-align: center;
+    }
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-image: url(https://dandigs.com/wp-content/uploads/2021/07/0025060857_10.jpeg);
+}
+
+.video {
     padding: 1px;
     margin: 1px;
     box-sizing: border-box;
@@ -10,21 +21,18 @@ html {
     font-size: 100%;
 }
 
-body {
-    font-family: "Baskervville", serif;
-    color: linen;
-    background-color: rgb(0, 0, 0);
+.logo {
+    align-items: center;
+    flex-wrap: wrap;
+    color: orangered;
 }
 
-img {
-    width: 50%;
-    object-fit: cover;
+input::placeholder {
+    font-weight: bold;
 }
 
-.text {
-    grid-column: 2 / 3;
-    font-size: 1.8rem;
-    letter-spacing: 0.6px;
-    column-width: 25rem;
-    text-align: justify;
+#nav-bar>nav-link {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
